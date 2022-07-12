@@ -1,0 +1,466 @@
+@import url('/lib/googleFonts/Poppins/Poppins-BlackItalic.ttf');
+@import url('/lib/googleFonts/Baloo_Thambi_2/BalooThambi2-VariableFont_wght.ttf');
+@import url('/lib/googleFonts/Rubik/Rubik-Italic-VariableFont_wght.ttf');
+@import url('/lib/googleFonts/Rubik/Rubik-VariableFont_wght.ttf');
+
+
+/* Base rules */
+*{
+    margin: O;
+    padding: 0;
+}
+
+:root{
+    /* couleur de background */
+    --success-bg-color: #18bc9c;
+    --global-bg-color: #f0f0f0;
+    /* couleurs */
+    --color-first: #1ec36dd9;
+    --color-page: #18bc9c;
+    --color-white : #fff;
+    --color-second: #f0f0f0;
+    --color-bande: rgba(0, 0, 0, 0.4) ;
+    --color-gray:#6c757d;
+    /* Couleur de hover */
+    --hover-color: #2c3e50;
+    --first-hover-color:#1ec36dd9;
+    /* Gestion d'erreur */
+    --color-success: #2ecc71;
+    --color-error: #e74c3c;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c757d;
+}
+
+/* Typography classes*/
+.font-poppins {
+    font-family: "Poppins", cursive;
+}
+.font-baloo {
+    font-family: "Baloo Thambi 2", cursive;
+  } 
+  .font-rubik {
+    font-family: "Rubik";
+  }
+  .font-rubik-italic{
+      font-family: "Rubik Italic",cursive;
+  }
+  .text-second{
+      color: #18bc9c;
+  } 
+  .font-size-12 {
+    font-size: 12px !important;
+  } 
+  .font-size-14 {
+    font-size: 14px !important;
+  }
+  .font-size-16 {
+    font-size: 16px !important;
+  }
+  .font-size-20 {
+    font-size: 20px !important;
+  }
+  .font-size-24 {
+    font-size: 20px !important
+  }
+  .font-size-30 {
+    font-size: 30px !important
+  }
+  
+
+.r-p{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bg-sec{
+    background: #F8F9FA;
+}
+
+.r-btn{
+    padding: 5px 20px;
+    background: #EE8683 !important;
+    color: #fff !important;
+}
+
+/* Preloader */
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 99998;
+}
+
+ .preloader::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #000;
+    transition: 1s;
+   
+} 
+
+.preloader::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: #000;
+    transition: 1s;
+   
+}
+
+.preloader.complete::before{
+    bottom: -50%;
+}
+
+.preloader.complete::after{
+    top: -50%;
+}
+
+.complete{
+    visibility: hidden;
+}
+
+.preloader .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(255,255,255,0.1);
+    border-top: 10px solid #ee8683;
+    animation: animate 1.5s infinite linear;
+    z-index: 99999;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+/* Navigation */
+
+r-nav{
+    background: transparent;
+    padding: 20px 0;
+    transition: .5s all;
+}
+nav .navbar-brand{
+    font-size: 30px;
+    color: #fff;
+}
+
+nav .navbar-nav li a{
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 16px;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    font-family:  'Nunito', sans-serif;
+}
+
+nav .navbar-nav li{
+    margin-left: 15px;
+}
+nav.r-nav{
+    transition: .5s all ease-in-out;
+}
+
+nav.r-nav.stickyadd{
+    background: #fff !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+    transition: .5s all ease-in-out;
+}
+nav.stickyadd .navbar-brand{
+    color: #000;
+    font-size: 40px;
+    transition: .5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link{
+    color: #000 !important;
+}
+.navbar .hamburger{
+    color: #fff ;
+}
+
+.navbar.stickyadd .hamburger{
+    color: #000 ;
+}
+
+/* Header section */
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../images/pexels-oyster-haus-6449926.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-box{
+    max-width: 700px;
+    color: #fff;
+}
+.content-box h4{
+    font-size: 30px;
+}
+.content-box h1{
+    font-size: 52px;
+}
+
+.content-box a{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+.content-box a:hover{
+    color: #000;
+    background: #fff;
+    transition:.5s all ;
+}
+
+.content-box p {
+    color: #fff;
+}
+
+/* About us */
+
+.about li a{
+    color: #EE8683;
+
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: .5s all;
+    text-align: center;
+}
+.about li a:hover{
+    color: black;
+}
+.youtube-link{
+    text-decoration: none;
+     color: #ff4e45;
+}
+.youtube-link:hover{
+    text-decoration: none;
+     color: #ff4e45;
+    border-bottom: 2px solid #ff4e45; 
+}
+/* Experiences */
+
+.exp-class .progress{
+    height: 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.progress-bar{
+    background-color: #EE86E3 !important;
+}
+
+.exp-class label {
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Services section */
+.card,.card-header{
+    background: #F8F9FA !important;
+}
+.card-header{
+    border: none !important;
+}
+.services-class .card-header i{
+font-size: 50px;
+}
+
+.service-border{
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    background: #e65f78;
+}
+
+/* Hire me section */
+
+/* Testimony */
+/* .testimony-class .test-item{
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.testimony-class .test-item .test-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.testimony-class .test-item i{
+    color: gray;
+}
+
+.test-item p.test-name{
+    font-size: 11px;
+} */
+
+/* Works */
+.work .card-wrapper{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Tutoriels */
+/* .col-list-3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+} */
+.tutoriel-item {
+    width: 100%;
+    background: var(--color-white ) none repeat scroll 0 0;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    margin: 20px 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(188, 191, 191);
+    overflow: hidden;
+  }
+  .tutoriel-item:hover {
+    border:1px solid rgb(217, 109, 47);
+    transition: border .5s ease;
+  }
+ 
+  .tutoriel-info-box { 
+      position:relative;
+      width: 100%;
+overflow: hidden;
+    }
+  .tutoriel-info-box .img-responsive{
+      width:100% ;
+      height: 250px;
+  }
+  .tutoriel-info-box ul {
+    background: var(--color-bande ) none repeat scroll 0 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: absolute;
+    width: 100%;
+  }
+  .tutoriel-info-box li {
+    color: #ffffff;
+    display: inline-block;
+    /* font-size: 13px; */
+    line-height: 50px;
+    list-style: outside none none;
+    margin: 0 15px 0 auto;
+  }
+  .tutoriel-info-box li .fa {
+    margin-right: 8px;
+  }
+  .tutoriel-item .tutoriel-info-box:hover  {
+    transform: scale(1.1);
+    transition: all .8s ease-out;
+}
+  .tutoriel-title-m {
+    overflow: hidden;
+    padding: 20px;
+  }
+  .tutoriel-title-m h6 {
+    float: left;
+    margin: 0 auto;
+    max-width: 245px;
+  }
+  .tutoriel-title-m h6 a {
+    color: #111111;
+  }
+ 
+  .inventory_info_m {
+    padding: 0 10px;
+  }
+  .inventory_info_m p {
+    color: #9e9e9e;
+    line-height: 22px;
+  }
+  
+  .tutoriel-footer{
+    padding: 0 10px;
+    font-style: italic;
+  }
+
+  .next{
+    color: rgb(217, 109, 47);
+}
+
+.next:hover{
+    color: rgba(255, 35, 10, 0.5);
+}
+
+  .create {
+    color: #555555;
+    float: right;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+/* contact Us */
+.contact .r-icon{
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    height: 200px;
+    background: #333333;
+}
+footer .r-icon a{
+    font-size: 20px; 
+    color: #848484;
+    padding: 10px;
+    border: 1px solid #848484;
+    border-radius: 50%;
+}
+
+footer .r-icon a:hover{
+    border: 1px solid #eee ;
+    color: #eee;
+    transition: .5s all;
+}
