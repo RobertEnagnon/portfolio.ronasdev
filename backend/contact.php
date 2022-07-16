@@ -52,13 +52,46 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $req->execute([$name, $email, $subject, $message]);
 
         //    Envoie d'email à ronasdev
-        $to = "ronasdev@gmail.com";
-        $sujet = "Conatct portfolio pour " . $subject;
-        $msg = "De la part de $name ($email) ";
-        $msg .= " Son message est : ==> $message";
+        $to = "mail@ronasdev.go.yo.fr";
+        $sujet = "Contact portfolio pour " . $subject;
 
-        mail($to, $sujet, $msg, ['from' => $email]);
+        $msg = '
+            <!DOCTYPE html>
+            <html lang="fr">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Enregistrement du coupon</title>
+            </head>
+            <body style="background:#fff;color:#000 text-align:center">
+                <main style="font-size: x-large;">
+                <h2 style="font-style: italic;"> De la part de '.$email.' </h2>
+                <p>
+                 <h3 style="color: #18bc9c;"> Objet du message '.$subject.' </h3>
+                 <h4> Message</h4>
+                 <p style="background-color: #EE8683; color: white;min-height:50vh">
+                    '.$message.'
+                 </p>
+                </p>
+                </main>
+            </body>
+            </html>
+    ';
+   
+// Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+     $headers[] = 'MIME-Version: 1.0';
+     $headers[] = 'Content-type: text/html; charset=utf-8';
 
-        echo json_encode(['success' => 'Merci d\'avoir contacté Robert. Il vous repondra bientôt']);
+     // En-têtes additionnels
+     $headers[] = 'From: mail@ronasdev.go.yo.fr';
+
+
+        if( mail($to, $sujet, $msg, implode("\r\n", $headers))){
+         echo json_encode(['success' => 'Merci d\'avoir contacté Robert. Il vous repondra bientôt']);
+        }else{
+            echo json_encode(['error' => 'Erreur d\'envoi du message.Réessayez']);
+        }
+
     }
 }
