@@ -13,12 +13,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="lib//animate.min.css">
+    <link rel="stylesheet" href="lib/simple-notify.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Robert | Portfolio</title>
 </head>
 <body>
+    <div class="contenant">
+            <!-- Preloader -->
     <div class="preloader">
         <div class="circle"></div>
+    </div>
+    <!-- Bouton de remonter -->
+    <div class="remonte">
+        <i class="fas fa-arrow-up "></i>
     </div>
 
     <nav class="navbar navbar-expand-lg sticky fixed-top r-nav">
@@ -45,7 +52,7 @@
                         <a href="#tutoriel-id" class="nav-link">Tutoriels de codage</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#services-id" class="nav-link">Services</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a href="" class="nav-link">Portfolio</a>
@@ -65,7 +72,7 @@
                     <div class="content-box animate__animated animate__fadeInUp font-poppins">
                         <h4 class="font-baloo">Bienvenu</h4>
                         <h1 class="font-rubik-italic"> Je suis <span class="element" style="color: #EE8683; font-weight: bold; font-style: italic;"></span></h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure eum nulla voluptate, maiores dolores ea.</p>
+                        <p>Faites concevoir votre application web ou mobile sur mesure avec des langages ou nouvelles technologies au coeur du numérique</p>
                         <a href="./images/cvRonasdev.pdf" class="btn" target="_blank">Télécharger mon CV</a>
                     </div>
                 </div>
@@ -83,15 +90,14 @@
                 <div class="col-lg-6 mt-5 mt-lg-0">
                     <h2>A propos de moi</h2>
                     <h4>Hola! Je suis <span style="color: #E96F85;">Robert SODJINOU</span>.</h4>
-                   <p> Passionné de la science, de mathématique, de la physique et de la programmation informatique,
+                   <p> Passionné des mathématiques, de la physique et de la programmation informatique,
                         je suis animé d’un esprit d'analyse profonde des problèmes et de  partage.</p>
                    <p>J'ai toujours pratiqué la science depuis mon enfance et je pratique quotidiennement depuis quelques années la programmation informatique.</p>
-                   <p>Je travaille en freelance pour le moment et pour la communauté, </p>
-                   <p>
-                    j'ai créé ma chaine youtube <a href="https://www.youtube.com/channel/UCCd0FhakwfzGomX9R1iNypg" class="youtube-link" target="_blank" >
+                   <p>Je travaille en freelance pour le moment et pour la communauté, 
+                    j'ai créé ma chaine youtube <a href="https://www.youtube.com/channel/UCCd0FhakwfzGomX9R1iNypg" class="youtube-link" target="_blank" title="Chaine youtube" >
                          <small class="fas fa-quote-left" style="font-size: x-small;"></small> ronasdev <small style="font-size: x-small;" class="fas fa-quote-right"></small> </a> dans l’intention d’aider et de partager mes connaissances avec tous ceux qui désirent entrer dans
-                     l’aventure ou approfondir gratuitement leur connaissance dans la programmation informatique. Vous découvrirez sur
-                      ma chaine des tutos vidéos complets et formations sur la programmation web et mobile de toute 
+                     l’aventure ou approfondir leur connaissance dans la programmation informatique. Vous découvrirez sur
+                      cette chaine des vidéos éducatives completes et des formations sur la programmation web et mobile de toute 
                     catégorie avec les langages comme HTML ,CSS ,JAVASCRIPT,node.js, PHP, Java, React js, React Native,Angular, Python, SQL, C/C++, etc.
                    </p>
                    <p>
@@ -100,12 +106,19 @@
                    
                     <div>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://web.facebook.com/robertenagnon.sod.22" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ronasdev-robert-sodjinou-465852189" target="_blank"><i class="fab fa-linkedin-in    "></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCCd0FhakwfzGomX9R1iNypg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/Ronas_dev" target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li> -->
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/ronas_dev/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li class="ml-5 list-inline-item">
+                                <div class="fb-page " data-href="https://web.facebook.com/ronasdev/" data-tabs="timeline" data-width="" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://web.facebook.com/ronasdev/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/ronasdev/">RonasDev</a></blockquote></div>
+                               <div class="text-primary"> Ma Page Facebook</div>
+                            </li>
                         </ul>
+                        <div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,42 +136,47 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 mx-auto mb-5">
-                    <button class="btn r-btn" data-filter="all">Tous</button>
-                    <button class="btn r-btn" data-filter="1">Web</button>
-                    <button class="btn r-btn" data-filter="2">Mobile</button>
-                    <button class="btn r-btn" data-filter="3">Desktops</button>
+                    <button class="btn r-btn my-1" data-filter="all">Tous</button>
+                    <button class="btn r-btn my-1" data-filter="1">Web</button>
+                    <button class="btn r-btn my-1" data-filter="2">Mobile</button>
+                    <button class="btn r-btn my-1" data-filter="3">Desktops</button>
                 </div>
             </div>
             <div class="conatiner">
                 <div class="row filter-container mx-auto" >
-                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1,2">
-                        <div>
-                            <img src="images/w1.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1,3">
-                        <div>
-                            <img src="images/w2.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="2,3">
-                        <div>
-                            <img src="images/m1.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1,3">
-                        <div>
-                            <img src="images/D1.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
                     <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
                         <div>
                             <img src="images/w3.png" class="img-fluid" alt="">
                         </div>
                     </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+                        <div>
+                            <img src="images/w2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="3">
+                        <div>
+                            <img src="images/d1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+                        <div>
+                            <img src="images/w4.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
                     <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="3">
                         <div>
                             <img src="images/d2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+                        <div>
+                            <img src="images/w5.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1,3">
+                        <div>
+                            <img src="images/w1.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -171,150 +189,14 @@
         <h2 class="font-poppins text-muted ml-5">Mes derniers tutoriels</h2><hr>
         <div class="container">
 
-               <div class="col">
-                <div class="owl-carousel owl-theme">
-                    <div class="item mx-3">
-                       <div class="tutoriel-item">
-                            <div class="tutoriel-info-box"> 
-                                <a href="#">
-                                    <img src="./images/img1.jpg" class="img-responsive" alt="image">
-                                </a>
-                                <ul>
-                                    <li class="font-size-16 font-rubik-italic"><i class="fa fa-box" aria-hidden="true"></i>Web </li>
-                                </ul>
-                            </div>
-                            <div class="tutoriel-body">
-                                <div class="tutoriel-title-m">
-                                    <h6 class="font-size-20 font-baloo"><a class="text-gray t1" href="#">
-                                        Comment créer un blog en php
-                                    </a></h6>
-                                
-                                </div>
-                                <div class="inventory_info_m">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ipsum numquam qui ad culpa et sapiente temporibus omnis, iusto nam?</p>
-                                </div>
-                            </div>
-                            <div class="tutoriel-footer">
-                                <a class="next p-4 font-size-16" href="#">Découvrire <i class="fas fa-arrow-right"></i> </a>
-                                <span class="create"><small>Mise en ligne  le 07/07/2022 </small></span> 
-                            </div>
-                       </div>
-                    </div>
-        
-                    <div class="item mx-3">
-                        <div class="tutoriel-item">
-                            <div class="tutoriel-info-box"> 
-                                <a href="#">
-                                    <img src="./images/img1.jpg" class="img-responsive" alt="image">
-                                </a>
-                                <ul>
-                                    <li class="font-size-16 font-rubik-italic"><i class="fa fa-box" aria-hidden="true"></i>Mobile </li>
-                                </ul>
-                            </div>
-                            <div class="tutoriel-body">
-                                <div class="tutoriel-title-m">
-                                    <h6 class="font-size-20 font-baloo"><a class="text-gray t1" href="#">
-                                        Créer un jeu avec React Native
-                                    </a></h6>
-                                
-                                </div>
-                                <div class="inventory_info_m">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ipsum numquam qui ad culpa et sapiente temporibus omnis, iusto nam?</p>
-                                </div>
-                            </div>
-                            <div class="tutoriel-footer">
-                                <a class="next p-4 font-size-16" href="#">Découvrir <i class="fas fa-arrow-right"></i> </a>
-                                <span class="create"><small>Mise en ligne  le 07/07/2022 </small></span> 
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item mx-3">
-                        <div class="tutoriel-item">
-                            <div class="tutoriel-info-box"> 
-                                <a href="#">
-                                    <img src="./images/img1.jpg" class="img-responsive" alt="image">
-                                </a>
-                                <ul>
-                                    <li class="font-size-16 font-rubik-italic"><i class="fa fa-box" aria-hidden="true"></i>Réseau </li>
-                                </ul>
-                            </div>
-                            <div class="tutoriel-body">
-                                <div class="tutoriel-title-m">
-                                    <h6 class="font-size-20 font-baloo"><a class="text-gray t1" href="#">
-                                        Modele TCP/IP
-                                    </a></h6>
-                                
-                                </div>
-                                <div class="inventory_info_m">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ipsum numquam qui ad culpa et sapiente temporibus omnis, iusto nam?</p>
-                                </div>
-                            </div>
-                            <div class="tutoriel-footer">
-                                <a class="next p-4 font-size-16" href="#">Découvrir <i class="fas fa-arrow-right"></i> </a>
-                                <span class="create"><small>Mise en ligne le 07/07/2022 </small></span> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item mx-3">
-                        <div class="tutoriel-item">
-                            <div class="tutoriel-info-box"> 
-                                <a href="#">
-                                    <img src="./images/img1.jpg" class="img-responsive" alt="image">
-                                </a>
-                                <ul>
-                                    <li class="font-size-16 font-rubik-italic"><i class="fa fa-box" aria-hidden="true"></i>Réseau </li>
-                                </ul>
-                            </div>
-                            <div class="tutoriel-body">
-                                <div class="tutoriel-title-m">
-                                    <h6 class="font-size-20 font-baloo"><a class="text-gray t1" href="#">
-                                        Modele TCP/IP
-                                    </a></h6>
-                                
-                                </div>
-                                <div class="inventory_info_m">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ipsum numquam qui ad culpa et sapiente temporibus omnis, iusto nam?</p>
-                                </div>
-                            </div>
-                            <div class="tutoriel-footer">
-                                <a class="next p-4 font-size-16" href="#">Découvrir <i class="fas fa-arrow-right"></i> </a>
-                                <span class="create"><small>Mise en ligne le 07/07/2022 </small></span> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item mx-3">
-                        <div class="tutoriel-item">
-                            <div class="tutoriel-info-box"> 
-                                <a href="#">
-                                    <img src="./images/img1.jpg" class="img-responsive" alt="image">
-                                </a>
-                                <ul>
-                                    <li class="font-size-16 font-rubik-italic"><i class="fa fa-box" aria-hidden="true"></i>Réseau </li>
-                                </ul>
-                            </div>
-                            <div class="tutoriel-body">
-                                <div class="tutoriel-title-m">
-                                    <h6 class="font-size-20 font-baloo"><a class="text-gray t1" href="#">
-                                        Modele TCP/IP
-                                    </a></h6>
-                                
-                                </div>
-                                <div class="inventory_info_m">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ipsum numquam qui ad culpa et sapiente temporibus omnis, iusto nam?</p>
-                                </div>
-                            </div>
-                            <div class="tutoriel-footer">
-                                <a class="next p-4 font-size-16" href="#">Découvrir <i class="fas fa-arrow-right"></i> </a>
-                                <span class="create"><small>Mise en ligne le 07/07/2022 </small></span> 
-                            </div>
-                        </div>
-                    </div>
+            <div class="col">
+                <!-- Gestion des tutoriels -->
+                <div class="owl-carousel owl-theme" id="tutoriels">
+                    <!-- Une carte de tutoriel -->
+                    
                 </div>
-               </div>
             </div>
+        </div>
     </section>
 
       <!-- Services -->
@@ -339,7 +221,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Développeur Web FullStack</h5>
                             <div class="service-border"></div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae error nobis tenetur repudiandae aspernatur commodi dolorem ad culpa aut!</p>
+                            <p class="card-text">Je vous crée vos sites, vitrine, Ecommerce, blog, application web ou plateforme web sur-mesure. Je réponds à tous les projets web 
+                                basés sur les dernières technologies pour être responsive design et optimisé pour le référencement naturel.</p>
                         </div>
                     </div>
                 </div>
@@ -352,7 +235,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Développeur mobile</h5>
                             <div class="service-border"></div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae error nobis tenetur repudiandae aspernatur commodi dolorem ad culpa aut!</p>
+                            <p class="card-text">
+                                Vous avez une idée, un rêve ou un projet, laissez moi vous aider à le réaliser.
+                                Allez! N'hésitez pas,améliorez votre productivité et développez votre Chiffre d'affaires  grâce aux applications mobiles que je vous aiderai à obtenir
+                            </p>
                         </div>
                     </div>      
                 </div>
@@ -365,7 +251,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Formation et suivi</h5>
                             <div class="service-border"></div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae error nobis tenetur repudiandae aspernatur commodi dolorem ad culpa aut!</p>
+                            <p class="card-text">
+                                Vous êtes étudiants, vous voulez démarrer votre carrière en tant que programmeur, vous voulez changer de carrière.
+                                Mais vous trouvez trop difficile ce métier.
+                                Je vous offre une formation et un suivi aussi exceptionnel que ça peut l'être.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -378,7 +268,10 @@
                         <div class="card-body">
                             <h5 class="card-title">SEO Services</h5>
                             <div class="service-border"></div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae error nobis tenetur repudiandae aspernatur commodi dolorem ad culpa aut!</p>
+                            <p class="card-text">
+                                Dans le contexte où la qualité de l’expérience utilisateur est devenue un critère clé pour Google,vous avez besoin non pas d'un site mais d'un site de qualité.
+                                Et c'est pour ça que je vous aide en vous : « Créant un contenu de qualité », car « le contenu est roi ».
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -391,7 +284,9 @@
                         <div class="card-body">
                             <h5 class="card-title">Wordpress Themes</h5>
                             <div class="service-border"></div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae error nobis tenetur repudiandae aspernatur commodi dolorem ad culpa aut!</p>
+                            <p class="card-text">
+                                Que vous ayez besoin d’un site web pour générer des ventes ou pour développer la confiance et la notoriété, Je peux vous concevoir, via WordPress, votre blog, votre page d’accueil, votre site vitrine, votre boutique en ligne, votre forum ou tout autre site web pour vos visiteurs.
+                            </p>
                         </div>
                     </div>      
                 </div>
@@ -404,7 +299,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Conseil d'apprentissage</h5>
                             <div class="service-border"></div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum beatae error nobis tenetur repudiandae aspernatur commodi dolorem ad culpa aut!</p>
+                            <p class="card-text">
+                                Vous peinez à avancer dans votre apprentissage en programmation informatique, je vous fournis en fonction de votre 
+                                intélligence ou votre disponibilité ou encore condition environnementale, des méthodes, moyens ou stratégies qui vont vous aider à changer la donne.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -439,7 +337,7 @@
                             <label >JavaScript</label>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" 
-                                style="width: 0%;" area-valuenow="0" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                style="width: 0%;" area-valuenow="0" aria-valuemin="0" aria-valuemax="100">90%</div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -460,7 +358,7 @@
                             <label >Node JS</label>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" 
-                                style="width: 0%;" area-valuenow="0" aria-valuemin="0" aria-valuemax="100"> 60%</div>
+                                style="width: 0%;" area-valuenow="0" aria-valuemin="0" aria-valuemax="100"> 75%</div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -474,7 +372,7 @@
                             <label >Laravel</label>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" 
-                                style="width: 0%;" area-valuenow="0" aria-valuemin="0" aria-valuemax="100"> 75%</div>
+                                style="width: 0%;" area-valuenow="0" aria-valuemin="0" aria-valuemax="100"> 85%</div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -503,63 +401,14 @@
             <div class="row">
                 <div class="col">
                     <h3 class="mb-4">Je suis disponible pour Freelance</h3>
-                    <a href="#" class="btn r-btn">Engagez moi</a>
+                    <a href="https://api.whatsapp.com/send?phone=22960934817" class="btn r-btn" title="Message par whatsapp" target="_blank">Engagez moi</a>
+                    <p class="text-muted" style="font-size: 13px;">Message whatsapp</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimony
-    <section class="testimony-class r-p" id="testimony-id">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <h2>Témoignages</h2>
-                    <p>Ce que les gens disent de moi</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="text-center test-item">
-                                <i class="fas fa-quote-left"></i>
-                                <div><img src="images/t1.jpg" class="mx-auto test-img rounded-circle" alt=""></div>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eum.</p>
-                                <p class="test-name">Jessica Mutan</p>
-                            </div>
-                        </div> 
-                        <div class="item">
-                            <div class="text-center test-item">
-                                <i class="fas fa-quote-left"></i>
-                                <div><img src="images/t2.jpeg" class="mx-auto test-img rounded-circle" alt=""></div>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eum.</p>
-                                <p class="test-name">Jessica Mutan</p>
-                            </div>
-                        </div> 
-                        <div class="item">
-                            <div class="text-center test-item">
-                                <i class="fas fa-quote-left"></i>
-                                <div><img src="images/t3.jpg" class="mx-auto test-img rounded-circle" alt=""></div>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eum.</p>
-                                <p class="test-name">Jessica Mutan</p>
-                            </div>
-                        </div> 
-                        <div class="item">
-                            <div class="text-center test-item">
-                                <i class="fas fa-quote-left"></i>
-                                <div><img src="images/t4.jpg" class="mx-auto test-img rounded-circle" alt=""></div>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, eum.</p>
-                                <p class="test-name">Jessica Mutan</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- COntact section -->
+    <!-- Contact section -->
     <section class="contact r-p bg-sec" id="contact-id">
         <div class="container text-center animate__animated" id="contact">
             <div class="row">
@@ -596,22 +445,26 @@
             </div>
             <div class="row mt-5">
                 <div class="col">
-                    <form >
+                    <form>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text"  id="name" class="form-control" placeholder="Nom">
+                                <span id="message-name" class="float-left"></span>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" name="" id="" class="form-control" placeholder="email">
+                                <input type="email" id="email" class="form-control" placeholder="email">
+                                <span id="message-email" class="float-left"></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Sujet">
+                            <input type="text" class="form-control" id="subject" placeholder="Sujet">
+                            <span id="message-subject" class="float-left"></span>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="7" placeholder="Votre Message" style="resize:none"></textarea>
+                            <textarea class="form-control" rows="7" id="message" placeholder="Votre Message" style="resize:none"></textarea>
+                            <span id="message-message" class="float-left"></span>
                         </div>
-                        <button type="submit" class="btn r-btn float-right">Soumettre</button>
+                        <button type="submit" id="btn-submit" class="btn r-btn float-right">Soumettre</button>
                     </form>
                 </div>
             </div>
@@ -625,10 +478,11 @@
                 <div class="col">
                     <div class="r-icon text-center mt-3">
                         <ul>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a  href="https://web.facebook.com/robertenagnon.sod.22" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ronasdev-robert-sodjinou-465852189" target="_blank"><i class="fab fa-linkedin-in    "></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCCd0FhakwfzGomX9R1iNypg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/Ronas_dev" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/ronas_dev/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                     <p class="text-muted" style="font-size: 14px;">
@@ -638,14 +492,18 @@
             </div>
         </div>
     </footer>
+    </div>
 
     <script src="lib/jquery3.5.1.slim.min.js"></script>
     <script src="lib/popper1.6.min.js"></script>
     <script src="lib/b4.6/js/bootstrap.min.js"></script>
+    <script src="lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="lib/simple-notify.min.js"></script>
     <script src="lib/typed.js@2.0.12.js"></script>
     <script src="lib/waypoints/jquery.waypoints.min.js"></script>
-    <script src="lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="lib/jquery.filterizr.min.js"></script>
-    <script src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v14.0" nonce="lRTEmnC6"></script>
 </body>
 </html>
