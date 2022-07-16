@@ -91,7 +91,7 @@ p{
 }
 
 /* Preloader */
-/* .preloader{
+.preloader{
     position: fixed;
     top: 0;
     left: 0;
@@ -147,7 +147,7 @@ p{
     border-top: 10px solid #ee8683;
     animation: animate 1.5s infinite linear;
     z-index: 99999;
-} */
+}
 
 @keyframes animate {
     0%{

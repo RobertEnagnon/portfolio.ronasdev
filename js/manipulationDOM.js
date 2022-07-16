@@ -1,8 +1,8 @@
 const manipulation = () =>{
 
-    // $(window).on('load',function(){
-    //     $('.preloader').addClass('complete');
-    // });
+    $(window).on('load',function(){
+        $('.preloader').addClass('complete');
+    });
 
     /**
      *  Bouton remonter
