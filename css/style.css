@@ -1,8 +1,4 @@
-@import url('./lib/googleFonts/Poppins/Poppins-BlackItalic.ttf');
-@import url('./lib/googleFonts/Baloo_Thambi_2/BalooThambi2-VariableFont_wght.ttf');
-@import url('./lib/googleFonts/Rubik/Rubik-Italic-VariableFont_wght.ttf');
-@import url('./lib/googleFonts/Rubik/Rubik-VariableFont_wght.ttf');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700&family=Poppins:ital,wght@1,900&family=Rubik:ital,wght@0,400;0,500;1,300;1,400;1,700&display=swap');
 
 /* Base rules */
 *{
@@ -45,13 +41,13 @@ p{
 
 /* Typography classes*/
 .font-poppins {
-    font-family: "Poppins", cursive;
+    font-family: "Poppins", sans-serif;
 }
 .font-baloo {
     font-family: "Baloo Thambi 2", cursive;
   } 
   .font-rubik {
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
   }
   .font-rubik-italic{
       font-family: "Rubik Italic",cursive;

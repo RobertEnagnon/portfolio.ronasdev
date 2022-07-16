@@ -79,6 +79,25 @@ const $headers =  {
                 type: 1,
                 position: 'right top'
               })
+              document.querySelector('#name').value = "";
+                document.querySelector('#email').value = "";
+                document.querySelector('#subject').value = "";
+                document.querySelector('#message').value = "";
+        }else if(data.error){
+            new Notify({
+                status: 'error',
+                title: 'Message non réussi',
+                text: data.error,
+                effect: 'slide',
+                speed: 300,
+                showIcon: true,
+                autoclose: false,
+                autotimeout: 8000,
+                gap: 20,
+                distance: 20,
+                type: 1,
+                position: 'right top'
+              })
         }
     })
     
