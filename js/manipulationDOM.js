@@ -1,9 +1,13 @@
 const manipulation = () =>{
 
-    $(window).on('load',function(){
-        $('.preloader').addClass('complete');
-    });
+    // $(window).on('load',function(){
+    //     $('.preloader').addClass('complete');
+    // });
 
+    setTimeout(()=>{
+        document.querySelector('.preloader').classList.add('complete');
+    },500)
+    
     /**
      *  Bouton remonter
      */
@@ -108,10 +112,6 @@ let cpoint = new Waypoint({
     offset: '80%'
   })
 
-    // Works FilterIzr
-    var filterizr = $('.filter-container').filterizr({
-        animationDuration: .5
-    })
 
 }
 

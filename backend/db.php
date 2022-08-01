@@ -11,6 +11,6 @@ try {
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 } catch (\Throwable $th) {
-    echo "Erreur de connexion à la base de données " + $th->getMessage();
+    echo json_encode("Erreur de connexion à la base de données " + $th->getMessage());
     die();
 }

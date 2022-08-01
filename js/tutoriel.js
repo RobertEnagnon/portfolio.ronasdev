@@ -3,7 +3,14 @@ const tutoriel = async (baseUrl) => {
 
     let tutoriels = document.querySelector('#tutoriels')
 
-    await fetch($url)
+    const $headers =  {
+        'Content-Type': 'application/json',
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Acces-Control-Allow-Headers": "*",
+      };
+
+    await fetch($url, $headers)
     .then((res)=>{
         return res.json();
     })

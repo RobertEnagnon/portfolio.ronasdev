@@ -1,6 +1,7 @@
 import manipulation from "./manipulationDOM.js";
 import contact from "./contact.js";
 import tutoriel from "./tutoriel.js";
+import work from "./work.js";
 
 $(document).ready(function(){
     const baseUrl = "http://localhost/oneByDay/ronsjsportfolio/";
@@ -19,6 +20,9 @@ $(document).ready(function(){
 
     // Gestion des tutoriels
     tutoriel(baseUrl);
+
+    // Gestion des traveaux
+    work(baseUrl);
 
   
     
